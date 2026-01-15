@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0b0f1a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #7f8cff;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #1a1f3c, #0b0f1a);
+}
+
+.profile-img {
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(127,140,255,0.6);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero h2 {
+  font-size: 1.3rem;
+  color: #b8c0ff;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 25px;
+  margin: 5px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.primary {
+  background: linear-gradient(135deg, #7f8cff, #9b5cff);
+}
+
+.secondary {
+  border: 1px solid #7f8cff;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(127,140,255,0.5);
+}
+
+.small {
+  font-size: 0.8rem;
+  padding: 8px 18px;
+}
+
+/* SKILLS */
+.skill-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card,
+.project-card {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s;
+}
+
+.card:hover,
+.project-card:hover {
+  transform: rotateX(5deg) rotateY(-5deg) scale(1.05);
+}
+
+/* TIMELINE */
+.timeline {
+  list-style: none;
+}
+
+.timeline li {
+  margin: 15px 0;
+}
+
+/* CONTACT */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background: #050814;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
